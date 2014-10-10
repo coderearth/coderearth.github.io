@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://coderearth.github.io/sitemap.xml 
+Sitemap: http://coderearth.org/sitemap.xml 

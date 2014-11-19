@@ -4,7 +4,7 @@
   <title><![CDATA[Coder Earth]]></title>
   <link href="http://coderearth.org/atom.xml" rel="self"/>
   <link href="http://coderearth.org/"/>
-  <updated>2014-11-19T16:53:22+05:30</updated>
+  <updated>2014-11-19T16:56:34+05:30</updated>
   <id>http://coderearth.org/</id>
   <author>
     <name><![CDATA[Coder]]></name>
@@ -74,18 +74,8 @@ fib n = fib(n-1) + fib(n-2)
 <a href="#n5" name="n5">5</a>
 <a href="#n6" name="n6">6</a>
 <a href="#n7" name="n7">7</a>
-<a href="#n8" name="n8">8</a>
-<a href="#n9" name="n9">9</a>
-<strong><a href="#n10" name="n10">10</a></strong>
-<a href="#n11" name="n11">11</a>
-<a href="#n12" name="n12">12</a>
 </pre></td>
-  <td class="code"><pre>suhas@coderearth.github.io$ ghci
-GHCi, version 7.6.3: http://www.haskell.org/ghc/  :? for help
-Loading package ghc-prim ... linking ... done.
-Loading package integer-gmp ... linking ... done.
-Loading package base ... linking ... done.
-Prelude&gt; let fib n = if n &lt; 2 then n else fib(n-1) + fib(n-2)
+  <td class="code"><pre>Prelude&gt; let fib n = if n &lt; 2 then n else fib(n-1) + fib(n-2)
 Prelude&gt; fib 10
 55
 Prelude&gt; fib 11
@@ -124,24 +114,8 @@ Prelude&gt; fib 12
 <a href="#n11" name="n11">11</a>
 <a href="#n12" name="n12">12</a>
 <a href="#n13" name="n13">13</a>
-<a href="#n14" name="n14">14</a>
-<a href="#n15" name="n15">15</a>
-<a href="#n16" name="n16">16</a>
-<a href="#n17" name="n17">17</a>
-<a href="#n18" name="n18">18</a>
-<a href="#n19" name="n19">19</a>
-<strong><a href="#n20" name="n20">20</a></strong>
-<a href="#n21" name="n21">21</a>
 </pre></td>
-  <td class="code"><pre>IPython <span class="float">2.1</span><span class="float">.0</span> -- An enhanced Interactive Python.
-Anaconda <span class="keyword">is</span> brought to you by Continuum Analytics.
-Please check out: http://continuum.io/thanks <span class="keyword">and</span> https://binstar.org
-<span class="error">?</span>         -&gt; Introduction <span class="keyword">and</span> overview of IPython<span class="string"><span class="delimiter">'</span><span class="content">s features.</span></span>
-%quickref -&gt; Quick reference.
-help      -&gt; Python<span class="string"><span class="delimiter">'</span><span class="content">s own help system.</span></span>
-<span class="predefined">object</span><span class="error">?</span>   -&gt; Details about <span class="string"><span class="delimiter">'</span><span class="content">object</span><span class="delimiter">'</span></span>, use <span class="string"><span class="delimiter">'</span><span class="content">object??</span><span class="delimiter">'</span></span> <span class="keyword">for</span> extra details.
-
-In [<span class="integer">1</span>]: fib = <span class="keyword">lambda</span> n: n <span class="keyword">if</span> n &lt; <span class="integer">2</span> <span class="keyword">else</span> fib(n-<span class="integer">1</span>) + fib(n-<span class="integer">2</span>)
+  <td class="code"><pre>In [<span class="integer">1</span>]: fib = <span class="keyword">lambda</span> n: n <span class="keyword">if</span> n &lt; <span class="integer">2</span> <span class="keyword">else</span> fib(n-<span class="integer">1</span>) + fib(n-<span class="integer">2</span>)
 
 In [<span class="integer">2</span>]: fib(<span class="integer">10</span>)
 Out[<span class="integer">2</span>]: <span class="integer">55</span>

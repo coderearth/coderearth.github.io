@@ -4,7 +4,7 @@
   <title><![CDATA[Coder Earth]]></title>
   <link href="http://coderearth.org/atom.xml" rel="self"/>
   <link href="http://coderearth.org/"/>
-  <updated>2014-11-09T15:35:06+05:30</updated>
+  <updated>2014-11-19T16:07:18+05:30</updated>
   <id>http://coderearth.org/</id>
   <author>
     <name><![CDATA[Coder]]></name>
@@ -12,6 +12,174 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Elegant Fibonacci - the Polyglot Guide]]></title>
+    <link href="http://coderearth.org/blog/2014/11/19/elegant-fibonacci-the-polyglot-guide/"/>
+    <updated>2014-11-19T12:21:44+05:30</updated>
+    <id>http://coderearth.org/blog/2014/11/19/elegant-fibonacci-the-polyglot-guide</id>
+    <content type="html"><![CDATA[<p>The Fibonacci numbers originally seen in <a href="http://en.wikipedia.org/wiki/Fibonacci_number#Origins">Indian Mathematics</a>, appeared in the West in the form of Liber Abaci by Leonardo of Pisa, known as Fibonacci. The series is known to manifest itself in nature in <a href="http://en.wikipedia.org/wiki/Fibonacci_number#In_nature">various ways</a>.</p>
+
+<p>The  series is defined by the following recurrence relation,</p>
+
+<script type="math/tex; mode=display">
+F_n = F_{n-1} + F_{n-2}
+</script>
+
+<p>with seed values </p>
+
+<script type="math/tex; mode=display">
+F_1 = 1, F_2 = 2
+</script>
+
+<p>or </p>
+
+<script type="math/tex; mode=display">
+F_0 = 0, F_1 = 1
+</script>
+
+<p>The idea is to find out the N<sup>th</sup> fibonacci number programmatically in many of today’s modern programming languages, <i>as elegantly  as possible</i>, while closely resembling the above mathematical relation.</p>
+
+<h3 id="haskell">Haskell</h3>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">fib n = if n &lt; 2 then n else fib(n-1) + fib(n-2)</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>or alternatively,</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">fib 0 = 0
+</span><span class="line">fib 1 = 1
+</span><span class="line">fib n = fib(n-1) + fib(n-2)</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Here’s a copy paste from my <code>ghci</code> shell,</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">suhas@coderearth.github.io$ ghci
+</span><span class="line">GHCi, version 7.6.3: http://www.haskell.org/ghc/  :? for help
+</span><span class="line">Loading package ghc-prim ... linking ... done.
+</span><span class="line">Loading package integer-gmp ... linking ... done.
+</span><span class="line">Loading package base ... linking ... done.
+</span><span class="line">Prelude&gt; let fib n = if n &lt; 2 then n else fib(n-1) + fib(n-2)
+</span><span class="line">Prelude&gt; fib 10
+</span><span class="line">55
+</span><span class="line">Prelude&gt; fib 11
+</span><span class="line">89
+</span><span class="line">Prelude&gt; fib 12
+</span><span class="line">144</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>The above piece of code will just give us the N<sup>th</sup> fibonacci. If however we want to get fibonacci numbers up until an N, then we can do something like this,</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Prelude&gt; map fib [1..10]
+</span><span class="line">[1,1,2,3,5,8,13,21,34,55]</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="python">Python</h3>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">IPython 2.1.0 -- An enhanced Interactive Python.
+</span><span class="line">Anaconda is brought to you by Continuum Analytics.
+</span><span class="line">Please check out: http://continuum.io/thanks and https://binstar.org
+</span><span class="line">?         -&gt; Introduction and overview of IPython's features.
+</span><span class="line">%quickref -&gt; Quick reference.
+</span><span class="line">help      -&gt; Python's own help system.
+</span><span class="line">object?   -&gt; Details about 'object', use 'object??' for extra details.
+</span><span class="line">
+</span><span class="line">In [1]: fib = lambda n: n if n &lt; 2 else fib(n-1) + fib(n-2)
+</span><span class="line">
+</span><span class="line">In [2]: fib(10)
+</span><span class="line">Out[2]: 55
+</span><span class="line">
+</span><span class="line">In [3]: fib(11)
+</span><span class="line">Out[3]: 89
+</span><span class="line">
+</span><span class="line">In [4]: fib(12)
+</span><span class="line">Out[4]: 144
+</span><span class="line">
+</span><span class="line">In [5]: map(fib, range(10))
+</span><span class="line">Out[5]: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Alternatively,</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">def fib(n):
+</span><span class="line">    if n == 0:
+</span><span class="line">        return 0
+</span><span class="line">    elif n == 1:
+</span><span class="line">        return 1
+</span><span class="line">    else:
+</span><span class="line">        return fib(n-1) + fib(n-2)</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="c">C++</h3>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">#include &lt;iostream&gt;
+</span><span class="line">int fib(int n) {
+</span><span class="line">    if (n == 0) return 0;
+</span><span class="line">    else if (n == 1) return 1;
+</span><span class="line">    else return fib(n-1) + fib(n-2);
+</span><span class="line">}
+</span><span class="line">
+</span><span class="line">int main() {
+</span><span class="line">    for (int i=0; i&lt;10; ++i) 
+</span><span class="line">        std::cout&lt;&lt;fib(i)&lt;&lt;"\n";
+</span><span class="line">    return 0;
+</span><span class="line">}</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>More languages to follow soon.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hello, World.]]></title>

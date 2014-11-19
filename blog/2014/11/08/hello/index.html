@@ -192,6 +192,13 @@ main()
 
         
         
+          <ul class="meta text-muted pager">
+            
+            
+            <li class="next"><a href="/blog/2014/11/19/elegant-fibonacci-the-polyglot-guide/" title="Next Post: Elegant Fibonacci - The Polyglot Guide">Elegant Fibonacci - The Polyglot Guide &raquo;</a></li>
+            
+          </ul>
+        
       </footer>
     </article>
     
@@ -206,6 +213,8 @@ main()
   </div>
   
   <div id="recent_posts" class="list-group">
+    
+    <a class="list-group-item " href="/blog/2014/11/19/elegant-fibonacci-the-polyglot-guide/">Elegant Fibonacci - the Polyglot Guide</a>
     
     <a class="list-group-item active" href="/blog/2014/11/08/hello/">Hello, World.</a>
     
@@ -292,5 +301,21 @@ main()
 <script src="/javascripts/modernizr-2.0.js"></script>
 
 
-  </body>
+ <!-- mathjax config similar to math.stackexchange -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'] ],
+        displayMath: [ ['$$', '$$']],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      },
+      messageStyle: "none",
+      "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+    });
+    </script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+ 
+    </body>
 </html>

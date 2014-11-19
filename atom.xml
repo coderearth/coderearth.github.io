@@ -4,7 +4,7 @@
   <title><![CDATA[Coder Earth]]></title>
   <link href="http://coderearth.org/atom.xml" rel="self"/>
   <link href="http://coderearth.org/"/>
-  <updated>2014-11-19T16:50:26+05:30</updated>
+  <updated>2014-11-19T16:53:22+05:30</updated>
   <id>http://coderearth.org/</id>
   <author>
     <name><![CDATA[Coder]]></name>
@@ -29,13 +29,13 @@ F_n = F_{n-1} + F_{n-2}
 <p>with seed values </p>
 
 <script type="math/tex; mode=display">
-F_1 = 1, F_2 = 2
+F_1 = 1,\ F_2 = 2
 </script>
 
 <p>or </p>
 
 <script type="math/tex; mode=display">
-F_0 = 0, F_1 = 1
+F_0 = 0,\ F_1 = 1
 </script>
 
 <p>The idea is to find out the N<sup>th</sup> fibonacci number programmatically in many of today’s modern programming languages, <i>as elegantly  as possible</i>, while closely resembling the above mathematical relation.</p>

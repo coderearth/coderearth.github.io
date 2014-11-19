@@ -4,7 +4,7 @@
   <title><![CDATA[Coder Earth]]></title>
   <link href="http://coderearth.org/atom.xml" rel="self"/>
   <link href="http://coderearth.org/"/>
-  <updated>2014-11-19T16:10:00+05:30</updated>
+  <updated>2014-11-19T16:50:26+05:30</updated>
   <id>http://coderearth.org/</id>
   <author>
     <name><![CDATA[Coder]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Elegant Fibonacci - the Polyglot Guide]]></title>
+    <title type="html"><![CDATA[A Polyglot's Guide to Elegant Fibonacci]]></title>
     <link href="http://coderearth.org/blog/2014/11/19/elegant-fibonacci-the-polyglot-guide/"/>
     <updated>2014-11-19T12:21:44+05:30</updated>
     <id>http://coderearth.org/blog/2014/11/19/elegant-fibonacci-the-polyglot-guide</id>

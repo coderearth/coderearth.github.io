@@ -146,140 +146,175 @@ F_0 = 0, F_1 = 1
 
 <h3 id="haskell">Haskell</h3>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">fib n = if n &lt; 2 then n else fib(n-1) + fib(n-2)</span></code></pre></td></tr></table></div></figure></notextile></div>
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>fib n = if n &lt; 2 then n else fib(n-1) + fib(n-2)
+</pre></td>
+</tr></table>
+</div>
 
 <p>or alternatively,</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">fib 0 = 0
-</span><span class="line">fib 1 = 1
-</span><span class="line">fib n = fib(n-1) + fib(n-2)</span></code></pre></td></tr></table></div></figure></notextile></div>
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+</pre></td>
+  <td class="code"><pre>fib 0 = 0
+fib 1 = 1
+fib n = fib(n-1) + fib(n-2)
+</pre></td>
+</tr></table>
+</div>
 
 <p>Here’s a copy paste from my <code>ghci</code> shell,</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">suhas@coderearth.github.io$ ghci
-</span><span class="line">GHCi, version 7.6.3: http://www.haskell.org/ghc/  :? for help
-</span><span class="line">Loading package ghc-prim ... linking ... done.
-</span><span class="line">Loading package integer-gmp ... linking ... done.
-</span><span class="line">Loading package base ... linking ... done.
-</span><span class="line">Prelude&gt; let fib n = if n &lt; 2 then n else fib(n-1) + fib(n-2)
-</span><span class="line">Prelude&gt; fib 10
-</span><span class="line">55
-</span><span class="line">Prelude&gt; fib 11
-</span><span class="line">89
-</span><span class="line">Prelude&gt; fib 12
-</span><span class="line">144</span></code></pre></td></tr></table></div></figure></notextile></div>
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+<a href="#n12" name="n12">12</a>
+</pre></td>
+  <td class="code"><pre>suhas@coderearth.github.io$ ghci
+GHCi, version 7.6.3: http://www.haskell.org/ghc/  :? for help
+Loading package ghc-prim ... linking ... done.
+Loading package integer-gmp ... linking ... done.
+Loading package base ... linking ... done.
+Prelude&gt; let fib n = if n &lt; 2 then n else fib(n-1) + fib(n-2)
+Prelude&gt; fib 10
+55
+Prelude&gt; fib 11
+89
+Prelude&gt; fib 12
+144
+</pre></td>
+</tr></table>
+</div>
 
 <p>The above piece of code will just give us the N<sup>th</sup> fibonacci. If however we want to get fibonacci numbers up until an N, then we can do something like this,</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">Prelude&gt; map fib [1..10]
-</span><span class="line">[1,1,2,3,5,8,13,21,34,55]</span></code></pre></td></tr></table></div></figure></notextile></div>
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+</pre></td>
+  <td class="code"><pre>Prelude&gt; map fib [1..10]
+[1,1,2,3,5,8,13,21,34,55]
+</pre></td>
+</tr></table>
+</div>
 
 <h3 id="python">Python</h3>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">IPython 2.1.0 -- An enhanced Interactive Python.
-</span><span class="line">Anaconda is brought to you by Continuum Analytics.
-</span><span class="line">Please check out: http://continuum.io/thanks and https://binstar.org
-</span><span class="line">?         -&gt; Introduction and overview of IPython's features.
-</span><span class="line">%quickref -&gt; Quick reference.
-</span><span class="line">help      -&gt; Python's own help system.
-</span><span class="line">object?   -&gt; Details about 'object', use 'object??' for extra details.
-</span><span class="line">
-</span><span class="line">In [1]: fib = lambda n: n if n &lt; 2 else fib(n-1) + fib(n-2)
-</span><span class="line">
-</span><span class="line">In [2]: fib(10)
-</span><span class="line">Out[2]: 55
-</span><span class="line">
-</span><span class="line">In [3]: fib(11)
-</span><span class="line">Out[3]: 89
-</span><span class="line">
-</span><span class="line">In [4]: fib(12)
-</span><span class="line">Out[4]: 144
-</span><span class="line">
-</span><span class="line">In [5]: map(fib, range(10))
-</span><span class="line">Out[5]: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]</span></code></pre></td></tr></table></div></figure></notextile></div>
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+<a href="#n12" name="n12">12</a>
+<a href="#n13" name="n13">13</a>
+<a href="#n14" name="n14">14</a>
+<a href="#n15" name="n15">15</a>
+<a href="#n16" name="n16">16</a>
+<a href="#n17" name="n17">17</a>
+<a href="#n18" name="n18">18</a>
+<a href="#n19" name="n19">19</a>
+<strong><a href="#n20" name="n20">20</a></strong>
+<a href="#n21" name="n21">21</a>
+</pre></td>
+  <td class="code"><pre>IPython <span class="float">2.1</span><span class="float">.0</span> -- An enhanced Interactive Python.
+Anaconda <span class="keyword">is</span> brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks <span class="keyword">and</span> https://binstar.org
+<span class="error">?</span>         -&gt; Introduction <span class="keyword">and</span> overview of IPython<span class="string"><span class="delimiter">'</span><span class="content">s features.</span></span>
+%quickref -&gt; Quick reference.
+help      -&gt; Python<span class="string"><span class="delimiter">'</span><span class="content">s own help system.</span></span>
+<span class="predefined">object</span><span class="error">?</span>   -&gt; Details about <span class="string"><span class="delimiter">'</span><span class="content">object</span><span class="delimiter">'</span></span>, use <span class="string"><span class="delimiter">'</span><span class="content">object??</span><span class="delimiter">'</span></span> <span class="keyword">for</span> extra details.
+
+In [<span class="integer">1</span>]: fib = <span class="keyword">lambda</span> n: n <span class="keyword">if</span> n &lt; <span class="integer">2</span> <span class="keyword">else</span> fib(n-<span class="integer">1</span>) + fib(n-<span class="integer">2</span>)
+
+In [<span class="integer">2</span>]: fib(<span class="integer">10</span>)
+Out[<span class="integer">2</span>]: <span class="integer">55</span>
+
+In [<span class="integer">3</span>]: fib(<span class="integer">11</span>)
+Out[<span class="integer">3</span>]: <span class="integer">89</span>
+
+In [<span class="integer">4</span>]: fib(<span class="integer">12</span>)
+Out[<span class="integer">4</span>]: <span class="integer">144</span>
+
+In [<span class="integer">5</span>]: <span class="predefined">map</span>(fib, <span class="predefined">range</span>(<span class="integer">10</span>))
+Out[<span class="integer">5</span>]: [<span class="integer">0</span>, <span class="integer">1</span>, <span class="integer">1</span>, <span class="integer">2</span>, <span class="integer">3</span>, <span class="integer">5</span>, <span class="integer">8</span>, <span class="integer">13</span>, <span class="integer">21</span>, <span class="integer">34</span>]
+</pre></td>
+</tr></table>
+</div>
 
 <p>Alternatively,</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">def fib(n):
-</span><span class="line">    if n == 0:
-</span><span class="line">        return 0
-</span><span class="line">    elif n == 1:
-</span><span class="line">        return 1
-</span><span class="line">    else:
-</span><span class="line">        return fib(n-1) + fib(n-2)</span></code></pre></td></tr></table></div></figure></notextile></div>
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> <span class="function">fib</span>(n):
+    <span class="keyword">if</span> n == <span class="integer">0</span>:
+        <span class="keyword">return</span> <span class="integer">0</span>
+    <span class="keyword">elif</span> n == <span class="integer">1</span>:
+        <span class="keyword">return</span> <span class="integer">1</span>
+    <span class="keyword">else</span>:
+        <span class="keyword">return</span> fib(n-<span class="integer">1</span>) + fib(n-<span class="integer">2</span>)
+</pre></td>
+</tr></table>
+</div>
 
 <h3 id="c">C++</h3>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">#include &lt;iostream&gt;
-</span><span class="line">int fib(int n) {
-</span><span class="line">    if (n == 0) return 0;
-</span><span class="line">    else if (n == 1) return 1;
-</span><span class="line">    else return fib(n-1) + fib(n-2);
-</span><span class="line">}
-</span><span class="line">
-</span><span class="line">int main() {
-</span><span class="line">    for (int i=0; i&lt;10; ++i) 
-</span><span class="line">        std::cout&lt;&lt;fib(i)&lt;&lt;"\n";
-</span><span class="line">    return 0;
-</span><span class="line">}</span></code></pre></td></tr></table></div></figure></notextile></div>
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+<a href="#n12" name="n12">12</a>
+</pre></td>
+  <td class="code"><pre><span class="preprocessor">#include</span> <span class="include">&lt;iostream&gt;</span>
+<span class="predefined-type">int</span> fib(<span class="predefined-type">int</span> n) {
+    <span class="keyword">if</span> (n == <span class="integer">0</span>) <span class="keyword">return</span> <span class="integer">0</span>;
+    <span class="keyword">else</span> <span class="keyword">if</span> (n == <span class="integer">1</span>) <span class="keyword">return</span> <span class="integer">1</span>;
+    <span class="keyword">else</span> <span class="keyword">return</span> fib(n-<span class="integer">1</span>) + fib(n-<span class="integer">2</span>);
+}
+
+<span class="predefined-type">int</span> main() {
+    <span class="keyword">for</span> (<span class="predefined-type">int</span> i=<span class="integer">0</span>; i&lt;<span class="integer">10</span>; ++i) 
+        std::cout&lt;&lt;fib(i)&lt;&lt;<span class="string"><span class="delimiter">&quot;</span><span class="char">\n</span><span class="delimiter">&quot;</span></span>;
+    <span class="keyword">return</span> <span class="integer">0</span>;
+}
+</pre></td>
+</tr></table>
+</div>
 
 <p>More languages to follow soon.</p>
 </div>

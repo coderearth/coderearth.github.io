@@ -47,7 +47,7 @@ fib n = fib(n-1) + fib(n-2)
 
 Here's a copy paste from my `ghci` shell,
 
-~~~ Haskell
+~~~ haskell
 Prelude> let fib n = if n < 2 then n else fib(n-1) + fib(n-2)
 Prelude> fib 10
 55
@@ -60,14 +60,14 @@ Prelude> fib 12
 
 The above piece of code will just give us the N<sup>th</sup> fibonacci. If however we want to get fibonacci numbers up until an N, then we can do something like this,
 
-~~~ Haskell
+~~~ haskell
 Prelude> map fib [1..10]
 [1,1,2,3,5,8,13,21,34,55]
 ~~~
 
 ### Python
 
-~~~ Python
+~~~ python
 In [1]: fib = lambda n: n if n < 2 else fib(n-1) + fib(n-2)
 
 In [2]: fib(10)
@@ -86,7 +86,7 @@ Out[5]: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 
 Alternatively,
 
-~~~ Python
+~~~ python
 def fib(n):
     if n == 0:
         return 0
@@ -98,7 +98,7 @@ def fib(n):
 
 ### C++
 
-~~~ CPP
+~~~ cpp
 #include <iostream>
 int fib(int n) {
     if (n == 0) return 0;
@@ -111,6 +111,33 @@ int main() {
         std::cout<<fib(i)<<"\n";
     return 0;
 }
+~~~
+
+### Ruby
+
+~~~ ruby
+def fib(n)
+  n < 2 ? n : fib(n-1) + fib(n-2)
+end
+
+1.upto(10) { |i| puts fib(i) }
+~~~
+
+Alternatively, a beginner's version would look like this,
+
+~~~ ruby
+def fib(n)
+  case
+  when n < 2
+    n
+  else
+    fib(n-1) + fib(n-2)
+  end
+end
+
+for i in 1..10 do
+  puts fib(i)
+end
 ~~~
 
 More languages to follow soon.

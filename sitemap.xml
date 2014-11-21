@@ -3,6 +3,14 @@
   
   
   <url>
+    <loc>http://coderearth.org/blog/2014/11/21/installing-and-running-hadoop-2-dot-5-on-windows-7/</loc>
+    
+    <lastmod>2014-11-21T14:47:40+05:30</lastmod>
+    
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://coderearth.org/blog/2014/11/19/elegant-fibonacci-the-polyglot-guide/</loc>
     
     <lastmod>2014-11-19T12:21:44+05:30</lastmod>
@@ -21,14 +29,14 @@
   
   <url>
     <loc>http://coderearth.org/</loc>
-    <lastmod>2014-11-20T12:06:51+05:30</lastmod>
+    <lastmod>2014-11-21T19:42:12+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://coderearth.org/blog/archives/</loc>
-    <lastmod>2014-11-20T12:06:51+05:30</lastmod>
+    <lastmod>2014-11-21T19:42:12+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -4,7 +4,7 @@
   <title><![CDATA[Coder Earth]]></title>
   <link href="http://coderearth.org/atom.xml" rel="self"/>
   <link href="http://coderearth.org/"/>
-  <updated>2014-11-20T12:06:51+05:30</updated>
+  <updated>2014-11-21T19:42:12+05:30</updated>
   <id>http://coderearth.org/</id>
   <author>
     <name><![CDATA[Coder]]></name>
@@ -12,6 +12,65 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Installing and Running Hadoop 2.5 on Windows 7]]></title>
+    <link href="http://coderearth.org/blog/2014/11/21/installing-and-running-hadoop-2-dot-5-on-windows-7/"/>
+    <updated>2014-11-21T14:47:40+05:30</updated>
+    <id>http://coderearth.org/blog/2014/11/21/installing-and-running-hadoop-2-dot-5-on-windows-7</id>
+    <content type="html"><![CDATA[<p>We’re going to see how to install and run a single node <a href="http://hadoop.apache.org/">Hadoop</a> cluster, version <a href="http://hadoop.apache.org/#19+November%2C+2014%3A+release+2.5.2+available">2.5</a> on a 64-bit Windows 7. For ease of reading, I have divided this tutorial into multiple chapters.</p>
+
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+  <li>Do not use Cygwin.</li>
+  <li>You need to have admin privileges to your computer.</li>
+  <li>Follow the <i>exact </i> versions of various softwares with the <i>exact</i> installation paths that are mentioned below.</li>
+</ul>
+
+<h3 id="chapter-1-install-java--configure-path">Chapter 1: Install JAVA &amp; Configure PATH</h3>
+
+<ol>
+  <li><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">Download JDK 1.7</a> and install it in <code>C:\Java\jdk1.7.0_71</code>.</li>
+  <li>Set the <code>JAVA_HOME</code> path variable.
+    <ol>
+      <li>Right-click the My Computer icon on your desktop and select Properties.</li>
+      <li>Click the Advanced system settings on the left pane.</li>
+      <li>Click the Environment Variables button.</li>
+      <li>Under System Variables, click New.</li>
+      <li>Enter the variable name as JAVA_HOME.</li>
+      <li>Enter the variable value as <code>C:\Java\jdk1.7.0_71</code>.</li>
+      <li>Click OK</li>
+    </ol>
+  </li>
+  <li>Add <code>%JAVA_HOME%\bin</code> to <code>Path</code>
+    <ol>
+      <li>Under System Variables, find the Path variable.</li>
+      <li>Click Edit</li>
+      <li>Prepend <code>%JAVA_HOME%\bin;</code></li>
+      <li>Click OK</li>
+    </ol>
+  </li>
+  <li>
+    <p>Verify the JAVA setup.</p>
+
+    <p><img src="http://i.imgur.com/wEexnBj.png" /></p>
+  </li>
+</ol>
+
+<p>Congratulations, you can now proceed to Chapter 2: Preparing Environment.</p>
+
+<h3 id="chapter-2-preparing-environment">Chapter 2: Preparing Environment</h3>
+
+<ol>
+  <li>I use <a href="https://code.google.com/p/conemu-maximus5/">ConEmu</a> as my console, but the windows command prompt should suffice, as well.</li>
+  <li>We will be needing <a href="http://www.7-zip.org/download.html">7zip</a> for extracting some archives later. Download &amp; Install it if you don’t have already.</li>
+  <li><a href="mirrors.ibiblio.org/apache/hadoop/common/stable2/hadoop-2.5.2-src.tar.gz">Download the Hadoop 2.5.2 Stable Source</a>.</li>
+</ol>
+
+<h3 id="to-be-updated">To Be Updated</h3>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[A Polyglot's Guide to Elegant Fibonacci]]></title>

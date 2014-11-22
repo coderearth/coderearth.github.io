@@ -258,6 +258,36 @@ Out[<span class="integer">5</span>]: [<span class="integer">0</span>, <span clas
 </tr></table>
 </div>
 
+<h3 id="awk">Awk</h3>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+</pre></td>
+  <td class="code"><pre>#!/bin/awk -f
+function fib(n) {
+    if (n == 0) return 0;
+    else if (n == 1) return 1;
+    else return fib(n-1) + fib(n-2);    
+}
+BEGIN {
+    for(i=0; i&lt;10; ++i)
+        print fib(i)
+}
+</pre></td>
+</tr></table>
+</div>
+
+<p>In <code>bash</code>, the above can be run as, <code>awk -f fib.awk</code>. <code>Awk</code> can of course do everything in a single line, but we’re trying to stick close to the mathematical recurrence relation.</p>
+
 <h3 id="java">JAVA</h3>
 
 <div><table class="CodeRay"><tr>
@@ -374,7 +404,7 @@ Out[<span class="integer">5</span>]: [<span class="integer">0</span>, <span clas
 
 <p>More languages to follow soon.</p>
 
-<p>The <i>elegance</i> here is a small compromise as far as performance is concerned, there are ways to increase computation speed which will be discussed in an upcoming post titled <i> A Polyglot’s Guide to Fast Fibonacci </i>.</p>
+<p>The <i>elegance</i> here is a small compromise as far as performance is concerned, there are ways to increase computation speed which will be discussed in an upcoming post titled <i> A Polyglot’s Guide to Fast Fibonacci </i>. In the meanwhile, you could give <a href="http://mathworld.wolfram.com/BinetsFibonacciNumberFormula.html">Binet’s formula</a> a look.</p>
 </div>
 
 

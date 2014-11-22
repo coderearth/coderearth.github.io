@@ -4,7 +4,7 @@
   <title><![CDATA[Coder Earth]]></title>
   <link href="http://coderearth.org/atom.xml" rel="self"/>
   <link href="http://coderearth.org/"/>
-  <updated>2014-11-22T21:59:03+05:30</updated>
+  <updated>2014-11-22T22:00:32+05:30</updated>
   <id>http://coderearth.org/</id>
   <author>
     <name><![CDATA[Coder]]></name>
@@ -157,13 +157,16 @@ C:\protoc-2.5.0-win32\protoc.exe
 
 <ol>
   <li>Add another System Variable under Environment Variables with the name <code>Platform</code> with value set to <code>x64</code>. This is case-sensitive. It’s <b>not</b> PLATFORM or platform, but <b><code>Platform</code></b>.</li>
-  <li>Build must be run through Windows SDK Command Prompt (Start &gt; All Programs &gt; 
-Microsoft Windows SDK v7.1 &gt; Windows SDK 7.1 Command Prompt).
- <img src="http://imgur.com/gZruIlT" /></li>
+  <li>
+    <p>Build must be run through Windows SDK Command Prompt (Start &gt; All Programs &gt; 
+Microsoft Windows SDK v7.1 &gt; Windows SDK 7.1 Command Prompt).</p>
+
+    <p><img src="http://i.imgur.com/gZruIlT.png" /></p>
+  </li>
 </ol>
 
 <p><br />
-Congratulations! You are now ready to build Hadoop. Move on to Chapter 3: Building Hadoop from Source.</p>
+Congratulations! You are now ready to build Hadoop. Move on to Chapter 3: Building Hadoop from Source.s</p>
 
 <h4 id="to-be-updated">To Be Updated</h4>
 ]]></content>

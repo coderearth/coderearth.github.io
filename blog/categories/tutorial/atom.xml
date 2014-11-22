@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tutorial | Coder Earth]]></title>
   <link href="http://coderearth.org/blog/categories/tutorial/atom.xml" rel="self"/>
   <link href="http://coderearth.org/"/>
-  <updated>2014-11-22T17:54:22+05:30</updated>
+  <updated>2014-11-22T18:18:10+05:30</updated>
   <id>http://coderearth.org/</id>
   <author>
     <name><![CDATA[Coder]]></name>
@@ -94,15 +94,18 @@
 <ol>
   <li>Download Protocol Buffers 2.5.0</li>
   <li>Extract it to <code>C:\protoc-2.5.0-win32</code> and prepend it to the system <code>Path</code> variable.</li>
-  <li>
-    <p>Verify that <code>protoc.exe</code> is in the <code>Path</code>.</p>
-
-    <p>~~~
- C:\Users\suhas&gt;where protoc
- C:\protoc-2.5.0-win32\protoc.exe
- ~~~</p>
-  </li>
+  <li>Verify that <code>protoc.exe</code> is in the <code>Path</code>.</li>
 </ol>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+</pre></td>
+  <td class="code"><pre>C:\Users\suhas&gt;where protoc
+C:\protoc-2.5.0-win32\protoc.exe
+</pre></td>
+</tr></table>
+</div>
 
 <h4 id="to-be-updated">To Be Updated.</h4>
 ]]></content>

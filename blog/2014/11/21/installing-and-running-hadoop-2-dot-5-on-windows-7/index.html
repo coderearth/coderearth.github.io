@@ -129,6 +129,7 @@
   <li>Do not use Cygwin.</li>
   <li>You need to have admin privileges to your computer.</li>
   <li>Follow the <i>exact </i> versions of various softwares with the <i>exact</i> installation paths that are mentioned below.</li>
+  <li>You need a <i>good</i> internet connection, as quite a bit of downloading is involved.</li>
 </ul>
 
 <h3 id="chapter-1-install-java--configure-path">Chapter 1: Install JAVA &amp; Configure PATH</h3>
@@ -217,7 +218,29 @@ C:\protoc-2.5.0-win32\protoc.exe
 
 <p><img src="http://i.picasion.com/pic78/04ecafd50f5df11683b9a4eceb11cae9.gif" /></p>
 
-<h4 id="to-be-updated">To Be Updated.</h4>
+<h5 id="dependency-4-unix-command-line-tools">Dependency 4: Unix command-line tools</h5>
+
+<p>Specifically, we need Unix command-line tools from GnuWin32 or Cygwin: <code>sh</code>, <code>mkdir</code>, <code>rm</code>, <code>cp</code>, <code>tar</code>, <code>gzip</code>. Since however we won’t be using Cygwin, we’ll use GnuWin32.</p>
+
+<ol>
+  <li>Download GetGnuWin32 from <a href="http://sourceforge.net/projects/getgnuwin32/files/">here</a>.</li>
+  <li><b>Please skip to step 5</b>. Steps 3 &amp; 4 are further information for the curious &amp; the adventurous. </li>
+  <li>Note that GetGnuWin32 is <i>not</i> GnuWin32 itself, but a package maintenance utility. More on that <a href="http://getgnuwin32.sourceforge.net/">here</a>, if you’re interested to read that is.</li>
+  <li>Since downloading from the GetGnuWin32 might take a while, and if you’re feeling miserly about your bandwidth usage, <i>and</i> if you know what you’re doing, you can skip this section altogether provided you have done either of the below:
+    <ol>
+      <li>If you have Cygwin, add its bin to <code>Path</code>, after making sure it has the above mentioned commands.</li>
+      <li>Individually download the above commands from GnuWin32 and add them to your <code>Path</code>.</li>
+    </ol>
+  </li>
+  <li>Click install on the GetGnuWin32 window, by default it should go to your <code>Downloads</code> folder.</li>
+  <li>From a command prompt, go where <code>GetGnuWin32</code> was installed to, in my case, <code>C:\Users\suhas\Downloads\GetGnuWin32</code> and run <code>download.bat</code>. This step will take a while.</li>
+  <li>Run <code>install C:\gnuwin32</code>.</li>
+  <li>Append <code>C:\gnuwin32\bin</code> to your <code>Path</code>.</li>
+</ol>
+
+<p><img src="http://cdn.makeagif.com/media/11-22-2014/K73fdT.gif" /></p>
+
+<h4 id="to-be-updated">To Be Updated</h4>
 </div>
 
 

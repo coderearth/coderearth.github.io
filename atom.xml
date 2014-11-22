@@ -4,7 +4,7 @@
   <title><![CDATA[Coder Earth]]></title>
   <link href="http://coderearth.org/atom.xml" rel="self"/>
   <link href="http://coderearth.org/"/>
-  <updated>2014-11-21T19:42:12+05:30</updated>
+  <updated>2014-11-22T17:54:22+05:30</updated>
   <id>http://coderearth.org/</id>
   <author>
     <name><![CDATA[Coder]]></name>
@@ -61,14 +61,50 @@
 
 <h3 id="chapter-2-preparing-environment">Chapter 2: Preparing Environment</h3>
 
+<h4 id="part-1-download--extract-hadoop-source">Part 1: Download &amp; Extract Hadoop Source</h4>
+
 <ol>
   <li>I use <a href="https://code.google.com/p/conemu-maximus5/">ConEmu</a> as my console, but the windows command prompt should suffice, as well.</li>
   <li>We will be needing <a href="http://www.7-zip.org/download.html">7zip</a> for extracting some archives later. Download &amp; Install it if you don’t have already.</li>
   <li><a href="mirrors.ibiblio.org/apache/hadoop/common/stable2/hadoop-2.5.2-src.tar.gz">Download the Hadoop 2.5.2 Stable Source</a>.</li>
+  <li>Extract the <code>.tar.gz</code> file with 7zip twice to get the <code>hadoop-2.5.2-src</code> folder.</li>
+  <li>Let’s copy the contents of the above folder to <code>C:\hadoop</code>.</li>
 </ol>
 
-<h3 id="to-be-updated">To Be Updated</h3>
+<p>At this stage, we have the hadoop source. We now have to build hadoop - to do this, we have to install some dependencies.</p>
 
+<h4 id="part-2-installing-windows-dependencies">Part 2: Installing Windows Dependencies</h4>
+
+<h5 id="dependency-1-apache-maven">Dependency 1: Apache Maven</h5>
+
+<ol>
+  <li><a href="http://maven.apache.org/download.cgi">Download Apache Maven 3.2.3</a></li>
+  <li>Just like we did with JAVA, Set the <code>M2_HOME</code> path variable as <code>C:\apache-maven-3.2.3</code> and prepend <code>%M2_HOME%\bin;</code> to the system <code>Path</code> variable.</li>
+  <li>
+    <p>Verify maven installation by typing <code>mvn --version</code> in a command prompt.</p>
+
+    <p><img src="http://i.imgur.com/gINQAu8.png" /></p>
+  </li>
+</ol>
+
+<h5 id="dependency-2--protocol-buffers">Dependency 2:  Protocol Buffers</h5>
+
+<p>Protocol Buffers is Google’s efficient data interchange format. Read more <a href="https://developers.google.com/protocol-buffers/">here</a>.</p>
+
+<ol>
+  <li>Download Protocol Buffers 2.5.0</li>
+  <li>Extract it to <code>C:\protoc-2.5.0-win32</code> and prepend it to the system <code>Path</code> variable.</li>
+  <li>
+    <p>Verify that <code>protoc.exe</code> is in the <code>Path</code>.</p>
+
+    <p>~~~
+ C:\Users\suhas&gt;where protoc
+ C:\protoc-2.5.0-win32\protoc.exe
+ ~~~</p>
+  </li>
+</ol>
+
+<h4 id="to-be-updated">To Be Updated.</h4>
 ]]></content>
   </entry>
   

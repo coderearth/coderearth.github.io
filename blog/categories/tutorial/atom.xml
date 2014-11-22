@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Tutorial | Coder Earth]]></title>
   <link href="http://coderearth.org/blog/categories/tutorial/atom.xml" rel="self"/>
   <link href="http://coderearth.org/"/>
-  <updated>2014-11-22T20:52:37+05:30</updated>
+  <updated>2014-11-22T20:54:22+05:30</updated>
   <id>http://coderearth.org/</id>
   <author>
     <name><![CDATA[Coder]]></name>
@@ -133,8 +133,6 @@ C:\protoc-2.5.0-win32\protoc.exe
   <li>Run <code>install C:\gnuwin32</code>.</li>
   <li>Append <code>C:\gnuwin32\bin</code> to your <code>Path</code>.</li>
 </ol>
-
-<p><img src="http://cdn.makeagif.com/media/11-22-2014/K73fdT.gif"></p>
 
 <h4 id="to-be-updated">To Be Updated</h4>
 ]]></content>

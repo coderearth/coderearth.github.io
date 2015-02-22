@@ -1,0 +1,21 @@
+Title: "Hello, world."
+Date: 2014-11-08 22:40
+Category: Blog 
+
+
+Because every programming endeavor should start with a Hello, world.
+
+~~~ C
+/*
+ * Prints Hello, world on the screen
+ * taken from "The C Programming Language"
+ * by Brian Kernighan and Dennis Ritchie
+ */
+
+#include <stdio.h>
+
+main()
+{
+    printf("hello, world\n");
+}
+~~~

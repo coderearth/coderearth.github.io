@@ -1,0 +1,61 @@
+
+/* nice sticky footer, from http://getbootstrap.com/examples/sticky-footer/ */
+html, body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+footer[role=contentinfo] {
+    height: 60px;
+}
+
+/* Import custom scheme */
+@import "custom/coderay";
+
+.CodeRay {
+  background-color: $code-bg;
+  padding: 0px;
+  pre {
+    padding: 5px 0px 5px 10px;
+  }
+}
+
+.CodeRay pre, .CodeRay .highlight, .CodeRay .gist-highlight  {
+  background-color: $code-bg;
+  border: 0px;
+  color: #F8F8F8;
+  margin-bottom: 0px;
+}
+
+// Nice line numbers
+table.CodeRay td {
+  padding: 0px;
+}
+.CodeRay .line-numbers, .CodeRay .no {
+  background-color: $line-nb-bg;
+  padding-right: 1em;
+  pre {
+      background-color: $line-nb-bg;
+      border: 0px;
+      margin: 0px;
+  }
+}
+.CodeRay .line { background-color: $line-nb-bg }
+.CodeRay span.line-numbers { padding: 0px 10px 0px 0px }
+
+// As in Sublime editor
+// Violet for constants ("Rails")
+.CodeRay .constant { color: #9B859D; }
+// Blue for predefined-constants ("self")
+.CodeRay .predefined-constant { color: #7587A6; font-weight: normal  }

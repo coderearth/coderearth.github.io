@@ -18,6 +18,9 @@ DEFAULT_LANG = u'en'
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ["render_math"]
 
+# code blocks with line numbers
+PYGMENTS_RST_OPTIONS = {'linenos': 'table'}
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -28,7 +31,7 @@ AUTHOR_FEED_RSS = None
 STATIC_PATHS = ['extra/CNAME']
 
 EXTRA_PATH_METADATA = {
-    'extra/CNAME': {'path': 'CNAME'}
+    'extra/CNAME': {'path': 'CNAME'},
 }
 
 # Blogroll

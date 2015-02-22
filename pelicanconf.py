@@ -25,12 +25,10 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Tell Pelican to add 'extra/custom.css' to the output dir
-STATIC_PATHS = ['images', 'extra/CNAME']
+STATIC_PATHS = ['extra/CNAME']
 
-# Tell Pelican to change the path to 'static/custom.css' in the output dir
 EXTRA_PATH_METADATA = {
-    'extra/CNAME': {'path': '/CNAME'}
+    'extra/CNAME': {'path': 'CNAME'}
 }
 
 # Blogroll
@@ -45,3 +43,6 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
+
+GOOGLE_ANALYTICS_UNIVERSAL = 'UA-41102923-3'
+DISQUS_SITENAME = 'coderearth'

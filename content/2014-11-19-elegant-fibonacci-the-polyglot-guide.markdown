@@ -1,6 +1,7 @@
-Title: "A Polyglot's Guide To Elegant Fibonacci"
+Title: A Polyglot's Guide To Elegant Fibonacci
 Date: 2014-11-19 12:21
 Category: Blog
+Authors: Suhas
 
 
 The Fibonacci numbers originally seen in [Indian Mathematics](http://en.wikipedia.org/wiki/Fibonacci_number#Origins), appeared in the West in the form of Liber Abaci by Leonardo of Pisa, known as Fibonacci. The series is known to manifest itself in nature in [various ways](http://en.wikipedia.org/wiki/Fibonacci_number#In_nature).

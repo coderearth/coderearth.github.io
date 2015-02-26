@@ -1,8 +1,9 @@
-Title: "What Powers CoderEarth.org - Pelican and Github Pages"
+Title: What Powers CoderEarth.org - Pelican and Github Pages
 Date: 2015-02-26 16:40
 Category: Blog
 Authors: Suhas
 Tags: Architecture, Blog
+Summary: My friend Kunal & I bought this domain on GoDaddy a year ago. Initially, I was planning to run this website on a shared host with the wordpress stack for content management. However this had its own cons.
 
 
 My friend Kunal & I bought this domain on GoDaddy a year ago. Initially, I was planning to run this website on a shared host with the wordpress stack for content management. However this had its own cons, namely:

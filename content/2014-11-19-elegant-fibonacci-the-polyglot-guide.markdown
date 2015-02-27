@@ -50,6 +50,30 @@ Prelude> map fib [1..10]
 [1,1,2,3,5,8,13,21,34,55]
 ~~~
 
+
+### Elixir
+
+~~~ elixir
+defmodule Fibo do
+  def fib(0), do: 0
+  def fib(1), do: 1
+  def fib(n), do: fib(n-1) + fib(n-2)
+end
+~~~
+
+and use the module like:
+~~~
+iex(1)> Fibo.fib(10)
+55
+iex(2)> Fibo.fib(11)
+89
+iex(3)> Fibo.fib(12)
+144
+iex(4)> Enum.map(1..10, &Fibo.fib/1)
+[1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+~~~
+
+
 ### Python
 
 ~~~ python
@@ -108,7 +132,7 @@ end
 1.upto(10) { |i| puts fib(i) }
 ~~~
 
-Alternatively, a beginner's version would look like this,
+Alternatively,
 
 ~~~ ruby
 def fib(n)

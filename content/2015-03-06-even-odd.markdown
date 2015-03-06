@@ -16,7 +16,7 @@ Code
 
 ~~~ python
 In [1]: def bitwise_check(num):
-   ...:     return 'odd' if num & 1 else 'even'
+   ....:     return 'odd' if num & 1 else 'even'
 
 In [2]: def manual_check(num):
    ....:     odd = '13579'

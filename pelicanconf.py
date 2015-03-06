@@ -8,6 +8,7 @@ SITEURL = ''
 
 THEME = 'pelican-bootstrap3'
 BOOTSTRAP_THEME = 'united'
+HIDE_SIDEBAR = True
 
 PATH = 'content'
 

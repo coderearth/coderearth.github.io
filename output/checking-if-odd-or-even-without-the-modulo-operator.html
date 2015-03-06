@@ -106,17 +106,13 @@ The Coder Earth Blog            </a>
 </footer><!-- /.post-info -->                    </div>
                 </div>
                 <p>There are many ways one can check if a number is odd or even without using the modulo operator.</p>
-<p>Here are a couple of methods to start with,</p>
-<ul>
-<li>Bitwise and</li>
-<li>Manually check if the last digit is odd or even</li>
-</ul>
-<p>Code</p>
+<p>Here are a couple of methods to start with...</p>
 <div class="highlight"><pre><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="k">def</span> <span class="nf">bitwise_check</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
    <span class="o">....</span><span class="p">:</span>     <span class="k">return</span> <span class="s">&#39;odd&#39;</span> <span class="k">if</span> <span class="n">num</span> <span class="o">&amp;</span> <span class="mi">1</span> <span class="k">else</span> <span class="s">&#39;even&#39;</span>
 
 <span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="k">def</span> <span class="nf">manual_check</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
    <span class="o">....</span><span class="p">:</span>     <span class="n">odd</span> <span class="o">=</span> <span class="s">&#39;13579&#39;</span>
+   <span class="o">....</span><span class="p">:</span>     <span class="c"># could&#39;ve used str instead of repr, but repr is faster</span>
    <span class="o">....</span><span class="p">:</span>     <span class="k">return</span> <span class="s">&#39;odd&#39;</span> <span class="k">if</span> <span class="nb">repr</span><span class="p">(</span><span class="n">num</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="n">odd</span> <span class="k">else</span> <span class="s">&#39;even&#39;</span>
 </pre></div>
 
@@ -220,11 +216,6 @@ The Coder Earth Blog            </a>
                     <li class="list-group-item">
                         <a href="/a-polyglots-guide-to-elegant-fibonacci.html">
                             A Polyglot's Guide To Elegant Fibonacci
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="/hello-world.html">
-                            Hello, world.
                         </a>
                     </li>
                 </ul>

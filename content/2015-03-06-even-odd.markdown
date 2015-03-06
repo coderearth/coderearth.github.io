@@ -7,12 +7,7 @@ Summary: Interviewers often get crazy. Let's get crazy too. This article tries t
 
 There are many ways one can check if a number is odd or even without using the modulo operator.
 
-Here are a couple of methods to start with,
-
-* Bitwise and
-* Manually check if the last digit is odd or even
-
-Code
+Here are a couple of methods to start with...
 
 ~~~ python
 In [1]: def bitwise_check(num):
@@ -20,6 +15,7 @@ In [1]: def bitwise_check(num):
 
 In [2]: def manual_check(num):
    ....:     odd = '13579'
+   ....:     # could've used str instead of repr, but repr is faster
    ....:     return 'odd' if repr(num)[-1] in odd else 'even'
 ~~~
 

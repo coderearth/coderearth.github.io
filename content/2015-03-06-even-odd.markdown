@@ -1,0 +1,77 @@
+Title: Checking If Odd Or Even Without The Modulo Operator
+Date: 2015-03-06 19:20
+Category: Programming
+Authors: Suhas
+Tags: Programming, Tutorial, Interview
+Summary: Interviewers often get crazy. Let's get crazy too. This article tries to explore all possibilities of checking if a number is odd or even in python, without using the modulo, without doing `if num % 2 == 0`.
+
+There are many ways one can check if a number is odd or even without using the modulo operator.
+
+Here are a couple of methods to start with,
+
+* Bitwise and
+* Manually check if the last digit is odd or even
+
+Code
+
+~~~ python
+In [1]: def bitwise_check(num):
+   ...:     return 'odd' if num & 1 else 'even'
+
+In [2]: def manual_check(num):
+   ....:     odd = '13579'
+   ....:     return 'odd' if repr(num)[-1] in odd else 'even'
+~~~
+
+Checking their authenticity
+
+~~~ python
+In [3]: {i: bitwise_check(i) for i in range(10)}
+Out[3]:
+{0: 'even',
+ 1: 'odd',
+ 2: 'even',
+ 3: 'odd',
+ 4: 'even',
+ 5: 'odd',
+ 6: 'even',
+ 7: 'odd',
+ 8: 'even',
+ 9: 'odd'}
+
+In [4]: {i: manual_check(i) for i in range(10)}
+Out[4]:
+{0: 'even',
+ 1: 'odd',
+ 2: 'even',
+ 3: 'odd',
+ 4: 'even',
+ 5: 'odd',
+ 6: 'even',
+ 7: 'odd',
+ 8: 'even',
+ 9: 'odd'}
+~~~
+
+... which seems to do the job.
+
+But how fast are they compared to the good old `num % 2 == 0`?
+
+Let's find out...
+
+~~~ python
+In [5]: def normal_check(num):
+   ....:     return 'even' if num % 2 == 0 else 'odd'
+   ....:
+
+In [6]: timeit bitwise_check(345)
+10000000 loops, best of 3: 134 ns per loop
+
+In [7]: timeit manual_check(345)
+1000000 loops, best of 3: 236 ns per loop
+
+In [8]: timeit normal_check(345)
+10000000 loops, best of 3: 149 ns per loop
+~~~
+
+As it turns out, bitwise operation is faster!

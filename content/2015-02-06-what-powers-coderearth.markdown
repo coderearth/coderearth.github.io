@@ -1,4 +1,4 @@
-Title: What Powers CoderEarth.org - Pelican and Github Pages
+Title: What Powers CoderEarth.org - Pelican And Github Pages
 Date: 2015-02-26 16:40
 Category: Blog
 Authors: Suhas

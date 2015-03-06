@@ -7,7 +7,7 @@ SITENAME = u'The Coder Earth Blog'
 SITEURL = ''
 
 THEME = 'pelican-bootstrap3'
-BOOTSTRAP_THEME = 'united'
+BOOTSTRAP_THEME = 'journal'
 HIDE_SIDEBAR = True
 
 PATH = 'content'

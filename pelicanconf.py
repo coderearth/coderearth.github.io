@@ -8,7 +8,9 @@ SITEURL = ''
 
 THEME = 'pelican-bootstrap3'
 BOOTSTRAP_THEME = 'journal'
-HIDE_SIDEBAR = True
+BOOTSTRAP_NAVBAR_INVERSE = True
+DISPLAY_TAGS_ON_SIDEBAR = False
+DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 
 PATH = 'content'
 
@@ -39,10 +41,6 @@ EXTRA_PATH_METADATA = {
 LINKS = (('Suhas', 'http://suhas.co'),
          ('Kunal', 'https://github.com/patelkunal'),)
 
-# Social widget
-SOCIAL = (('Twitter', 'https://twitter.com/coderorg'),
-          ('Github', 'https://github.com/coderearth'),)
-
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
@@ -50,3 +48,4 @@ DEFAULT_PAGINATION = 10
 
 GOOGLE_ANALYTICS_UNIVERSAL = 'UA-41102923-3'
 DISQUS_SITENAME = 'coderearth'
+TWITTER_WIDGET_ID = '520610142333595648'

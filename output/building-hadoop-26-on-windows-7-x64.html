@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>Hello, world. - The Coder Earth Blog</title>
+    <title>Building Hadoop 2.6 on Windows 7 x64 - The Coder Earth Blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,18 +10,21 @@
 
 
 
-<link rel="canonical" href="/hello-world.html">
+<link rel="canonical" href="/building-hadoop-26-on-windows-7-x64.html">
 
         <meta name="author" content="Suhas" />
-        <meta name="description" content="Because every programming endeavor should start with a Hello, world. /* * Prints Hello, world on the screen * taken from &#34;The C Programming Language&#34; * by Brian Kernighan and Dennis Ritchie */ #include &lt;stdio.h&gt; main() { printf(&#34;hello, world\n&#34;); }" />
+        <meta name="keywords" content="Programming,Tutorial" />
+        <meta name="description" content="Building Hadoop on Windows is a painful task. It has a zillion dependencies and the build almost always fails, but after a quadrillion tries..." />
 
         <meta property="og:site_name" content="The Coder Earth Blog" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="Hello, world."/>
-        <meta property="og:url" content="/hello-world.html"/>
-        <meta property="og:description" content="Because every programming endeavor should start with a Hello, world. /* * Prints Hello, world on the screen * taken from &#34;The C Programming Language&#34; * by Brian Kernighan and Dennis Ritchie */ #include &lt;stdio.h&gt; main() { printf(&#34;hello, world\n&#34;); }"/>
-        <meta property="article:published_time" content="2014-11-08" />
-            <meta property="article:section" content="Blog" />
+        <meta property="og:title" content="Building Hadoop 2.6 on Windows 7 x64"/>
+        <meta property="og:url" content="/building-hadoop-26-on-windows-7-x64.html"/>
+        <meta property="og:description" content="Building Hadoop on Windows is a painful task. It has a zillion dependencies and the build almost always fails, but after a quadrillion tries..."/>
+        <meta property="article:published_time" content="2015-03-06" />
+            <meta property="article:section" content="Tutorial" />
+            <meta property="article:tag" content="Programming" />
+            <meta property="article:tag" content="Tutorial" />
             <meta property="article:author" content="Suhas" />
 
 
@@ -50,13 +53,13 @@ The Coder Earth Blog            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                        <li class="active">
+                        <li >
                             <a href="/category/blog.html">Blog</a>
                         </li>
                         <li >
                             <a href="/category/programming.html">Programming</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="/category/tutorial.html">Tutorial</a>
                         </li>
             </ul>
@@ -77,10 +80,10 @@ The Coder Earth Blog            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="/hello-world.html"
+                    <a href="/building-hadoop-26-on-windows-7-x64.html"
                        rel="bookmark"
-                       title="Permalink to Hello, world.">
-                        Hello, world.
+                       title="Permalink to Building Hadoop 2.6 on Windows 7 x64">
+                        Building Hadoop 2.6 on Windows 7 x64
                     </a>
                 </h1>
             </header>
@@ -90,28 +93,55 @@ The Coder Earth Blog            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2014-11-08T22:40:00+05:30"> Sat 08 November 2014</time>
+        <i class="fa fa-calendar"></i><time datetime="2015-03-06T19:20:00+05:30"> Fri 06 March 2015</time>
     </span>
 
 
 
+<span class="label label-default">Tags</span>
+	<a href="/tag/programming.html">Programming</a>
+        /
+	<a href="/tag/tutorial.html">Tutorial</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>Because every programming endeavor should start with a Hello, world.</p>
-<div class="highlight"><pre><span class="cm">/*</span>
-<span class="cm"> * Prints Hello, world on the screen</span>
-<span class="cm"> * taken from &quot;The C Programming Language&quot;</span>
-<span class="cm"> * by Brian Kernighan and Dennis Ritchie</span>
-<span class="cm"> */</span>
-
-<span class="p">#</span><span class="k">include</span> <span class="o">&lt;</span><span class="n">stdio</span><span class="p">.</span><span class="n">h</span><span class="o">&gt;</span>
-
-<span class="n">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;hello, world</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<span class="p">}</span>
-</pre></div>
+                <h3>System</h3>
+<ul>
+<li>Windows 7 Ultimate Service Pack 1</li>
+<li>Intel(R) Core(TM) i5-4210U CPU @ 1.70 GHz 1.70 GHz</li>
+<li>8.00 GB RAM</li>
+<li>64-bit Operating System</li>
+</ul>
+<h3>Prerequisites</h3>
+<p>I'm going to assume that you have access to (and) know how to perform the below:</p>
+<ul>
+<li>Good Internet connection</li>
+<li>Admin account</li>
+<li>Ability to change Path variable and add new env variables<ul>
+<li>Click Start</li>
+<li>Right click on Computer</li>
+<li>Choose Properties</li>
+<li>Click on Advanced system settings</li>
+<li>Environment variables...</li>
+</ul>
+</li>
+</ul>
+<h3>Steps to build Hadoop 2.6</h3>
+<ol>
+<li>Download the 2.6 release from http://hadoop.apache.org/releases.html and extract it to somewhere with a short path like <code>C:\hdc\</code></li>
+<li>Go through the <code>BUILDING.txt</code> file</li>
+<li>Download and install .NET framework 4.0 (<em>not</em> 4.5) from http://www.microsoft.com/en-in/download/details.aspx?id=17851</li>
+<li>Download and install Windows SDK 7.1 from http://www.microsoft.com/en-in/download/details.aspx?id=8279</li>
+<li>Download and install the latest JDK (I used Java 1.8 and it worked for me) and update your <code>JAVA_HOME</code> environment variable, add <code>%JAVA_HOME%\bin</code> to your path. (My <code>JAVA_HOME</code> is <code>C:\Java\jdk1.8.0_40</code>)</li>
+<li>Download maven from http://maven.apache.org/download.cgi and extract it. Update the <code>M2_HOME</code> environment variable and add <code>%M2_HOME%\bin</code> to your path. (My <code>M2_HOME</code> is <code>C:\app\apache-maven-3.2.5</code>)</li>
+<li>Download Findbugs 1.3.9 from http://sourceforge.net/projects/findbugs/files/findbugs/1.3.9/ and update <code>FINDBUGS_HOME</code> environment variable and add <code>%FINDBUGS_HOME%\bin</code> to your path</li>
+<li>Download ProtocolBuffer 2.5.0 from https://code.google.com/p/protobuf/downloads/list (<code>protoc-2.5.0-win32.zip</code>) and add the extracted folder to your path</li>
+<li>Download the latest CMAKE http://www.cmake.org/ and add it to your path </li>
+<li>Download Zlib source and DLL files from http://www.zlib.net/ and update <code>ZLIB_HOME</code> to the source file directory and add the DLL directory to your path</li>
+<li>Download Cygwin and add it to your path (I've appended <code>C:\cygwin64\bin</code> instead of prepending to avoid some conflicts)</li>
+<li>Goto Start &gt; All Programs &gt; Microsoft Windows SDK 7.1 &gt; Windows SDK 7.1 Command Prompt &gt; Right click &gt; Open as administrator and run the maven build command <code>mvn package -Pdist,native-win -Dmaven.javadoc.skip=true -DskipTests -Dtar</code> which is going to take a while... and if all goes well...</li>
+</ol>
+<p><img alt="Build successful" src="{filename}\img\hadoopbuildsuccess.PNG" /></p>
             </div>
             <!-- /.entry-content -->
 <section class="comments" id="comments">
@@ -151,8 +181,8 @@ The Coder Earth Blog            </a>
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
-                        <a href="/building-hadoop-26-on-64-bit-windows-7.html">
-                            Building Hadoop 2.6 on 64-bit Windows 7
+                        <a href="/building-hadoop-26-on-windows-7-x64.html">
+                            Building Hadoop 2.6 on Windows 7 x64
                         </a>
                     </li>
                     <li class="list-group-item">

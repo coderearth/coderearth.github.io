@@ -39,7 +39,7 @@
 </head>
 <body>
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: #e22d2d; border: none;">
 	<div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -139,7 +139,10 @@ The Coder Earth Blog            </a>
 <li>Download the latest CMAKE http://www.cmake.org/ and add it to your path </li>
 <li>Download Zlib source and DLL files from http://www.zlib.net/ and update <code>ZLIB_HOME</code> to the source file directory and add the DLL directory to your path</li>
 <li>Download Cygwin and add it to your path (I've appended <code>C:\cygwin64\bin</code> instead of prepending to avoid some conflicts)</li>
-<li>Goto Start &gt; All Programs &gt; Microsoft Windows SDK 7.1 &gt; Windows SDK 7.1 Command Prompt &gt; Right click &gt; Open as administrator and run the maven build command <code>mvn package -Pdist,native-win -Dmaven.javadoc.skip=true -DskipTests -Dtar</code> which is going to take a while... and if all goes well...</li>
+<li>Add <code>Platform</code> environment variable and set it to <code>x64</code> and if you've read the <code>BUILDING.txt</code> file, it says that it must be "Platform", not "PLATFORM" or "platform"</li>
+<li>Add <code>MSBuild.exe</code> folder location to your path, that's <code>C:\Windows\Microsoft.NET\Framework64\v4.0.30319</code>  </li>
+<li>Goto Start &gt; All Programs &gt; Microsoft Windows SDK 7.1 &gt; Windows SDK 7.1 Command Prompt &gt; Right click &gt; Open as administrator</li>
+<li>Run the maven build command <code>mvn package -Pdist,native-win -Dmaven.javadoc.skip=true -DskipTests -Dtar</code> which is going to take a while... and if all goes well...</li>
 </ol>
 <p><img alt="Build successful" src="/img/hadoopbuildsuccess.PNG" /></p>
             </div>

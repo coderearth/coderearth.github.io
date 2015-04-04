@@ -43,4 +43,4 @@ I'm going to assume that you have access to (and) know how to perform the below:
 14. Goto Start > All Programs > Microsoft Windows SDK 7.1 > Windows SDK 7.1 Command Prompt > Right click > Open as administrator
 15. Run the maven build command `mvn package -Pdist,native-win -Dmaven.javadoc.skip=true -DskipTests -Dtar` which is going to take a while... and if all goes well...
 
-![Build successful]({filename}img\hadoopbuildsuccess.PNG)
+![Build successful]({filename}img/hadoopbuildsuccess.PNG)

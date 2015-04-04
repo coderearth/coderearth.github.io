@@ -38,8 +38,8 @@ EXTRA_PATH_METADATA = {
 }
 
 # Blogroll
-LINKS = (('Suhas', 'http://suhas.co'),
-         ('Kunal', 'https://github.com/patelkunal'),)
+# LINKS = (('Suhas', 'http://suhas.co'),
+#         ('Kunal', 'https://github.com/patelkunal'),)
 
 DEFAULT_PAGINATION = 10
 

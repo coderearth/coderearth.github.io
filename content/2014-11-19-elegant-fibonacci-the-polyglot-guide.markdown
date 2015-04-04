@@ -1,6 +1,6 @@
 Title: A Polyglot's Guide To Elegant Fibonacci
 Date: 2014-11-19 12:21
-Category: Blog
+Category: Programming
 Authors: Suhas
 
 
@@ -164,6 +164,12 @@ end
 for i in 1..10 do
   puts fib(i)
 end
+~~~
+
+### Julia
+
+~~~ jl
+fib(n) = n < 2 ? n : fib(n-1) + fib(n-2)
 ~~~
 
 More languages to follow soon.

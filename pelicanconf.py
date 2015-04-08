@@ -19,7 +19,9 @@ TIMEZONE = 'Asia/Kolkata'
 DEFAULT_LANG = u'en'
 
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ["render_math"]
+PLUGINS = [
+    'render_math'
+]
 
 # code blocks with line numbers
 PYGMENTS_RST_OPTIONS = {'linenos': 'table'}

@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from os import name
+
 
 AUTHOR = u'Suhas'
 SITENAME = u'The Coder Earth Blog'
@@ -33,10 +35,12 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-STATIC_PATHS = ['extra/CNAME', 'img']
+SEP = '\\' if name == 'nt' else '/'
+
+STATIC_PATHS = ['extra' + SEP + 'CNAME', 'img']
 
 EXTRA_PATH_METADATA = {
-    'extra/CNAME': {'path': 'CNAME'},
+    'extra' + SEP + 'CNAME': {'path': 'CNAME'},
 }
 
 # Blogroll

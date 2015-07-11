@@ -111,11 +111,10 @@ The Coder Earth Blog            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>Elixir is the most exciting language right now. It's in the elite set of post-2010 languages that's influencing programming. There is Julia for numerical computing, Rust for systems programming and Elixir for super-scalable backends.</p>
-<p>Elixir is built on top of the Erlang VM, the same VM known for helping WhatsApp scale to the extent that it is today.</p>
-<p>Learning any language is simpler when one actually writes code in it, and read lots of well-written code. In that spirit, I've started solving <a href="https://projecteuler.net/">Project Euler</a> with Elixir.</p>
+                <p>Elixir is a dynamic, functional language designed for building scalable and maintainable applications. Elixir is built on top of the Erlang VM, the same VM known for helping WhatsApp scale to the extent that it is today. Learning any language is simpler when one actually writes code in it, and read lots of well-written code. In that spirit, I've started solving <a href="https://projecteuler.net/">Project Euler</a> with Elixir.</p>
 <h3><a href="https://github.com/jargnar/euler-elixir">https://github.com/jargnar/euler-elixir</a></h3>
-<p>Here's a rough excerpt:</p>
+<hr />
+<p>Here's an excerpt:</p>
 <div class="highlight"><pre><span class="c1"># Find even fibonaccis less than 4000000</span>
 
 <span class="n">fibs</span> <span class="o">=</span> <span class="nc">Stream</span><span class="o">.</span><span class="n">unfold</span><span class="p">({</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">},</span> <span class="k">fn</span> <span class="p">{</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="p">{</span><span class="n">a</span><span class="p">,</span> <span class="p">{</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">}}</span> <span class="k">end</span><span class="p">)</span>

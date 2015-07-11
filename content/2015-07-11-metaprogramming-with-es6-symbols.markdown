@@ -1,4 +1,4 @@
-Title: Metaprogramming With ES6 Symbols
+Title: Metaprogramming With ECMAScript 6
 Date: 2015-07-11 22:00
 Category: Programming
 Authors: Suhas
